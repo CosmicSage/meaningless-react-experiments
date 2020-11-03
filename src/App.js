@@ -1,5 +1,6 @@
 import './App.css';
-import { ReactComponent as SmallArrow } from "./arrow.svg";
+
+import { ReactComponent as SmallArrow }  from "./arrow.svg";
 
 const Checkbox = props => (
   <div onClick={() => {props.one(props.value)}}>
