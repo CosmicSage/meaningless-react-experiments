@@ -1,5 +1,4 @@
 import './App.css';
-import { ReactComponent as SmallArrow } from "./arrow.svg";
 
 const Checkbox = props => (
   <div onClick={() => {props.one(props.value)}}>
@@ -31,7 +30,7 @@ function App() {
   return (
     <div id="box_body" className="box_body">
       <div id="box_control" className="box_control" onClick={minimize}>
-        <SmallArrow/>
+        <img src={require("./arrow.svg")}/>
       </div>
       <div id="box_content">
         <p >Did you find the website helpful?</p>
