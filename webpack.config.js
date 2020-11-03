@@ -1,5 +1,6 @@
+const webpack = require('webpack');
 module.exports = {
-    entry: "./src/App.js",
+    entry: "./src/index.js",
     output: {
         filename: "bundle.js"
     },
@@ -26,5 +27,10 @@ module.exports = {
                 use: [{loader: 'css-loader'}]
             },
         ]
-    }
+    },
+    plugins: [
+       new webpack.ProvidePlugin({
+          "React": "react",
+       }),
+    ],
 };
